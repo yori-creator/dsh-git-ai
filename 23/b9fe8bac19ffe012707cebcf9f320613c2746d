@@ -1,0 +1,19 @@
+.gitattributes
+  s_1c8ae431d82969::t_3ef2958bb877ba 1-2
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "23b9fe8bac19ffe012707cebcf9f320613c2746d",
+  "prompts": {},
+  "sessions": {
+    "s_1c8ae431d82969": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "9aa26e5b-496b-4c00-894c-189aae824487",
+        "model": "deepseek-flash"
+      },
+      "human_author": "yori-creator <yori-creator@users.noreply.github.com>"
+    }
+  }
+}
