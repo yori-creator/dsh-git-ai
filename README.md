@@ -57,6 +57,8 @@ git ai blame <改过的文件>   # 显示 deepseek-harness
 | `trackBackgroundCommands` | `false` | 是否记录 `run_in_background` 启动的命令 |
 | `debug` | `false` | 在 DSH 日志里打印每次 checkpoint |
 
+注意：重新执行安装脚本会重写这段片段，手改的 `config:` 需要自己保留。
+
 ## 卸载
 
 ```powershell
