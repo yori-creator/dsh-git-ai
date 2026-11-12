@@ -1,0 +1,19 @@
+README.md
+  s_971ea3210f1d93::t_58047dca9f6733 3-5,7,9,11,13-16,18,21,30,32,35-36,42,47,51
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "a42cfbddfa69257518ff8e563f68af3bba0cca42",
+  "prompts": {},
+  "sessions": {
+    "s_971ea3210f1d93": {
+      "agent_id": {
+        "tool": "deepseek-harness",
+        "id": "session-c80bd827-3409-4fe4-a1c6-7b7229432656",
+        "model": "deepseek-flash"
+      },
+      "human_author": "yori-creator <yori-creator@users.noreply.github.com>"
+    }
+  }
+}
