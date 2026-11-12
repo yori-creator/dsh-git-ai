@@ -75,6 +75,14 @@ test('expresses paths relative to the repository root', () => {
   assert.equal(toRepoRelative(undefined, 'D:/work/repo/a.js'), 'D:/work/repo/a.js')
 })
 
+test('handles POSIX and Windows paths on any platform', () => {
+  assert.equal(toRepoRelative('/home/me/repo', '/home/me/repo/src/a.js'), 'src/a.js')
+  assert.equal(toRepoRelative('/home/me/repo', '/home/other/a.js'), '/home/other/a.js')
+  assert.equal(resolveToolPath('/home/me/repo', 'src/a.js'), '/home/me/repo/src/a.js')
+  assert.equal(resolveToolPath('/home/me/repo', 'D:/repo/a.js'), 'D:/repo/a.js')
+  assert.equal(resolveToolPath('C:/repo', 'src/a.js'), 'C:/repo/src/a.js')
+})
+
 test('resolves relative tool paths against the session directory', () => {
   assert.equal(resolveToolPath('D:/work/repo', 'src/a.js'), 'D:/work/repo/src/a.js')
   assert.equal(resolveToolPath('D:/work/repo', 'D:\\work\\repo\\a.js'), 'D:/work/repo/a.js')
