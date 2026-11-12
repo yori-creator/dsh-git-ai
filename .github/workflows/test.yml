@@ -21,3 +21,6 @@ jobs:
           node-version: ${{ matrix.node }}
       # The end-to-end cases skip themselves when git-ai is not installed.
       - run: node --test
+      - name: Shell script syntax
+        if: runner.os != 'Windows'
+        run: bash -n install.sh && bash -n uninstall.sh
