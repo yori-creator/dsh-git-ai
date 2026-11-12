@@ -1,7 +1,6 @@
 {
   "name": "dsh-git-ai",
-  "version": "0.1.0",
-  "private": false,
+  "version": "0.1.1",
   "description": "Git AI attribution for DeepSeek Harness: line-level AI authorship, per-model stats and prompt-linked commits",
   "type": "module",
   "main": "lib/index.js",
