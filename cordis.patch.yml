@@ -1,0 +1,4 @@
+# dsh-git-ai bundle patch: one row inserting the plugin into a profile.
+- insert:
+    - id: git-ai
+      name: dsh-git-ai
