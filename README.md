@@ -36,6 +36,27 @@ git ai stats HEAD --json   # tool_model_breakdown 里出现 deepseek-harness::<�
 git ai blame <改过的文件>   # 显示 deepseek-harness
 ```
 
+## 可选配置
+
+默认不用配，装完即用。要调整的话，在 `<DSH_HOME>/profiles/desktop/cordis.patch.yml`
+里安装脚本写入的那段 `config:` 下加字段（改完 DSH 会热加载）：
+
+```yaml
+      config:
+        agentName: deepseek-harness
+        extraFileTools:
+          apply_patch: path
+```
+
+| 字段 | 默认 | 说明 |
+| --- | --- | --- |
+| `agentName` | `deepseek-harness` | `git ai blame` 里显示的归属名 |
+| `binary` | `git-ai` | git-ai 路径（也可用 `GIT_AI_BINARY` 环境变量） |
+| `extraFileTools` | `{}` | 额外要归因的文件工具，如 MCP 的 `apply_patch: path` |
+| `extraShellTools` | `[]` | 额外要归因的 shell 工具，如 `["terminal_send"]` |
+| `trackBackgroundCommands` | `false` | 是否记录 `run_in_background` 启动的命令 |
+| `debug` | `false` | 在 DSH 日志里打印每次 checkpoint |
+
 ## 卸载
 
 ```powershell
