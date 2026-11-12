@@ -1,0 +1,24 @@
+package.json
+  s_971ea3210f1d93::t_c48b712843edaa 3
+lib/index.js
+  s_971ea3210f1d93::t_868c92e17ad159 262
+  s_971ea3210f1d93::t_7c5be13c5f4a3b 23
+  s_971ea3210f1d93::t_cfcbab01101d6a 26
+  s_971ea3210f1d93::t_d75227f42a412e 47-62
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "28d0563986df98e285ed8be17e0b94349b48a22a",
+  "prompts": {},
+  "sessions": {
+    "s_971ea3210f1d93": {
+      "agent_id": {
+        "tool": "deepseek-harness",
+        "id": "session-c80bd827-3409-4fe4-a1c6-7b7229432656",
+        "model": "deepseek-flash"
+      },
+      "human_author": "yori-creator <yori-creator@users.noreply.github.com>"
+    }
+  }
+}
