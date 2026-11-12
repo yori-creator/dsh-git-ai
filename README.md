@@ -1,9 +1,14 @@
 # dsh-git-ai
 
+[![test](https://github.com/yori-creator/dsh-git-ai/actions/workflows/test.yml/badge.svg)](https://github.com/yori-creator/dsh-git-ai/actions/workflows/test.yml)
+
 让 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（DSH）支持
 [Git AI](https://github.com/git-ai-project/git-ai)：Agent 写下的每一行代码、用到的模型、
 所属会话都会在提交时变成可追溯的 AI 归属，`git ai blame` / `git ai stats` / `git ai log`
 即可查看。
+
+> Git AI attribution for DeepSeek Harness — line-level AI authorship, per-model stats and
+> session-linked commits, implemented as a zero-dependency Cordis plugin.
 
 Git AI 官方目前没有 DSH 集成（官方预设列表里没有 DeepSeek Harness），本插件通过
 Git AI 的通用 `agent-v1` checkpoint 预设补齐这一能力。
